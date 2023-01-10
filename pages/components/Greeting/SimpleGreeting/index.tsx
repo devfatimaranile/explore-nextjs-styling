@@ -1,6 +1,6 @@
-import { Title, Wrapper } from "./Greeting.style";
+import { Title, Wrapper } from "./SimpleGreeting.style";
 
-const Greeting = ({
+const SimpleGreeting = ({
   text,
   nightMode = false,
 }: {
@@ -14,4 +14,4 @@ const Greeting = ({
   );
 };
 
-export default Greeting;
+export default SimpleGreeting;

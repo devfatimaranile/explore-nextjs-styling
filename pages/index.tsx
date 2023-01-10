@@ -1,10 +1,12 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
-import Greeting from "./components/Greeting/Greeting";
+import { Space } from "antd";
 
-const inter = Inter({ subsets: ["latin"] });
+// styles
+import styles from "../styles/Home.module.css";
+
+// components
+import { SimpleGreeting } from "./components/Greeting";
+import { CircularProgress } from "./components/Progress";
 
 export default function Home() {
   return (
@@ -17,10 +19,16 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div>
-          <Greeting text={"Day"} />
+          <SimpleGreeting text={"Day"} />
         </div>
         <div>
-          <Greeting text={"Night"} nightMode />
+          <SimpleGreeting text={"Night"} nightMode />
+        </div>
+
+        <div>
+          <Space wrap>
+            <CircularProgress />
+          </Space>
         </div>
       </main>
     </>
