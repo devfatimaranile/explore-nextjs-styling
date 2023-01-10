@@ -17,7 +17,10 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div>
-          <Greeting />
+          <Greeting text={"Day"} />
+        </div>
+        <div>
+          <Greeting text={"Night"} nightMode />
         </div>
       </main>
     </>
